@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+	<div>以下に取得したDBのレコードを表示する</div>
+	<div>
+		<span>------------------------------</span>
+	</div>
+	<div th:each="sampleOutputBean:${listSampleOutputBean}">
+		<div>
+			<span>id:</span>
+			<span th:text="${sampleOutputBean.beanSelect01}"></span>	
+			<span>string:</span>
+			<span th:text="${sampleOutputBean.beanString01}"></span>
+		</div>
+		<div>
+			<span>------------------------------</span>
+		</div>
+	</div>
+</body>
+</html>

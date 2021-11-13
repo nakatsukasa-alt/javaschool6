@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>Hello world!</div>
+	<div><span>-------------------------------------</span></div>
+	<div><span th:text="${stirng}">ここにsampleView01メソッドで取得したmodelの内容が表示される</span></div>
+	<div><span>-------------------------------------</span></div>
+	<form th:action="@{/sample01}" th:object="${sampleForm}" method="post">
+		<div><input type="text" name="formString01"
+		placeholder="※入力した値がsampleformクラスのformString01に代入される" style="width :400px">
+		</div>
+		<div>
+			<select name="formSelect01">
+				<option th:value=1>value:1の値がsampleFormクラスのformSelect01に代入される</option>
+				<option th:value=2>value:2の値がsampleFormクラスのformSelect02に代入される</option>
+			</select>
+		</div>
+		<div><button type="submit">SampleControllerの/sample01へ</button>
+		</div>
+	</form>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+</body>
+</html>

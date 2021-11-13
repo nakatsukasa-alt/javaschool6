@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<span>sampleoutputBean.beanString01の中身</span>
+		<span th:text="${sampleOutputBean.beanString01}"></span>
+	</div>
+	<div>
+		<span>sampleOutputBean.beanString02の中身</span>
+		<span th:text="${sampleOutputBean.beanString02}"></span>
+	</div>
+	<div>
+		<span>sampleOutputBean.beanSelect01の中身</span>
+		<span th:text="${sampleOutputBean.beanSelect01}"></span>
+	</div>
+	<form th:action="@{/sample02}" method="get">
+		<button type="submit">SampleControllerの/sample02へ</button>
+	</form>
+</body>
+</html>
